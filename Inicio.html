@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MathYou - Encontre sua conexão</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="romantic-places-overlay">
+        <div class="romantic-place"></div>
+        <div class="romantic-place"></div>
+        <div class="romantic-place"></div>
+    </div>
+    
+    <div class="floating-hearts">
+        <i class="fas fa-heart floating-heart" style="top: 10%; left: 5%;"></i>
+        <i class="fas fa-heart floating-heart" style="top: 20%; right: 10%;"></i>
+        <i class="fas fa-heart floating-heart" style="top: 50%; left: 15%;"></i>
+        <i class="fas fa-heart floating-heart" style="top: 70%; right: 20%;"></i>
+    </div>
+    
+    <div class="app-container">
+        <!-- Header/Navbar -->
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fas fa-heart"></i> MathYou
+            </div>
+            <div class="nav-icons">
+                <i class="fas fa-home" title="Início"></i>
+                <i class="fas fa-search search-icon" title="Buscar"></i>
+                <i class="fas fa-heart" title="Matches"></i>
+                <i class="fas fa-user" title="Perfil"></i>
+            </div>
+        </nav>
+
+        <!-- Search Panel -->
+        <div class="search-panel">
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Buscar por características...">
+                <div class="search-filters">
+                    <div class="filter-group">
+                        <label>Procuro por:</label>
+                        <select class="gender-filter">
+                            <option value="">Todos</option>
+                            <option value="mulher">Mulheres</option>
+                            <option value="homem">Homens</option>
+                            <option value="todos">Todos os gêneros</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label>Etnia:</label>
+                        <select class="ethnicity-filter">
+                            <option value="">Todas</option>
+                            <option value="branco">Branco(a)</option>
+                            <option value="negro">Negro(a)</option>
+                            <option value="pardo">Pardo(a)</option>
+                            <option value="asiatico">Asiático(a)</option>
+                            <option value="indigena">Indígena</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label>Cor do cabelo:</label>
+                        <select class="hair-filter">
+                            <option value="">Todos</option>
+                            <option value="loiro">Loiro(a)</option>
+                            <option value="moreno">Moreno(a)</option>
+                            <option value="ruivo">Ruivo(a)</option>
+                            <option value="preto">Preto</option>
+                            <option value="castanho">Castanho</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label>Cor dos olhos:</label>
+                        <select class="eyes-filter">
+                            <option value="">Todos</option>
+                            <option value="castanho">Castanhos</option>
+                            <option value="azul">Azuis</option>
+                            <option value="verde">Verdes</option>
+                            <option value="mel">Mel</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label>Distância:</label>
+                        <select class="distance-filter">
+                            <option value="">Qualquer</option>
+                            <option value="5">5 km</option>
+                            <option value="10">10 km</option>
+                            <option value="25">25 km</option>
+                            <option value="50">50 km</option>
+                            <option value="100">100 km</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label>Interesses:</label>
+                        <select class="interests-filter">
+                            <option value="">Todos</option>
+                            <option value="viagens">Viagens</option>
+                            <option value="musica">Música</option>
+                            <option value="esportes">Esportes</option>
+                            <option value="gastronomia">Gastronomia</option>
+                        </select>
+                    </div>
+
+                    <button class="search-button">
+                        <i class="fas fa-search"></i> Buscar
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <div class="profile-card">
+                <div class="profile-image-container">
+                    <div class="photo-gallery">
+                        <div class="gallery-slider">
+                            <img src="jb.jpg" alt="Profile Photo">
+                            <img src="https://via.placeholder.com/400x500" alt="Profile Photo 2">
+                            <img src="https://via.placeholder.com/400x500" alt="Profile Photo 3">
+                            <img src="https://via.placeholder.com/400x500" alt="Profile Photo 4">
+                        </div>
+                        <div class="gallery-dots"></div>
+                        <button class="gallery-prev">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="gallery-next">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    <div class="media-controls">
+                        <button class="toggle-video" title="Ver vídeo">
+                            <i class="fas fa-play-circle"></i> Ver vídeo
+                        </button>
+                    </div>
+                </div>
+                <div class="profile-info">
+                    <h2>Junior benjamin, 31</h2>
+                    <p class="location">
+                        <i class="fas fa-map-marker-alt"></i> São Paulo, BR
+                    </p>
+                    <div class="interests">
+                        <span class="tag"><i class="fas fa-plane-departure"></i> Viagens</span>
+                        <span class="tag"><i class="fas fa-camera"></i> Fotografia</span>
+                        <span class="tag"><i class="fas fa-music"></i> Música</span>
+                        <span class="tag"><i class="fas fa-utensils"></i> Gastronomia</span>
+                    </div>
+                    <p class="bio">✨ Destinos dos sonhos: Paris, Tokyo, Nova York</p>
+                    <p class="places">❤️ Lugares favoritos: Parque Ibirapuera, MASP, Villa Country</p>
+                    <div class="romantic-quote">
+                        "Em busca de alguém para compartilhar momentos especiais..."
+                    </div>
+                </div>
+                <div class="action-buttons">
+                    <button class="btn-dislike" title="Passar">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <button class="btn-like" title="Curtir">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
